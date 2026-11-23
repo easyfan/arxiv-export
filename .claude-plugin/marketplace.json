@@ -14,7 +14,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/easyfan/arxiv-export.git",
-        "sha": "0000000000000000000000000000000000000000"
+        "sha": "37a00dfc95cc7092a0834ec4e5cf676a2ce43c4f"
       },
       "homepage": "https://github.com/easyfan/arxiv-export"
     }
