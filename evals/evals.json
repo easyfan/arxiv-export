@@ -1,0 +1,46 @@
+{
+  "evals": [
+    {
+      "id": "trigger_export_arxiv_cn",
+      "description": "Chinese 'export arXiv submission' trigger",
+      "user_message": "用 arxiv-export 把 main_en.md 导出成 arXiv 投稿包",
+      "expected_behavior": "Skill triggers; runs Phase 0 preflight (toolchain check + source inventory), then the 6-phase export",
+      "should_trigger": true
+    },
+    {
+      "id": "trigger_md_to_latex_cn",
+      "description": "Chinese 'markdown to latex' trigger",
+      "user_message": "把这篇论文 paper.md 转成 LaTeX",
+      "expected_behavior": "Skill triggers and begins math-delimiting + unicode→LaTeX conversion",
+      "should_trigger": true
+    },
+    {
+      "id": "trigger_arxiv_submission_en",
+      "description": "English 'arXiv submission' trigger",
+      "user_message": "turn my paper into an arXiv LaTeX submission",
+      "expected_behavior": "Skill triggers and produces main.tex + submission.tar.gz + PDF proof",
+      "should_trigger": true
+    },
+    {
+      "id": "trigger_compile_paper_pdf_en",
+      "description": "English 'compile paper PDF' trigger",
+      "user_message": "compile my markdown paper to a PDF for arXiv",
+      "expected_behavior": "Skill triggers; verifies toolchain then compiles and packages",
+      "should_trigger": true
+    },
+    {
+      "id": "no_trigger_general_latex_question",
+      "description": "A general LaTeX syntax question should not trigger a full export",
+      "user_message": "how do I write a matrix in LaTeX?",
+      "expected_behavior": "Answer the question directly; do not launch the arXiv export pipeline",
+      "should_trigger": false
+    },
+    {
+      "id": "no_trigger_write_paper",
+      "description": "Writing a paper from scratch is academic-paper's job, not arxiv-export",
+      "user_message": "帮我写一篇关于集合竞价的学术论文",
+      "expected_behavior": "Defer to academic-paper / writing-editorial; arxiv-export only takes a finished Markdown draft",
+      "should_trigger": false
+    }
+  ]
+}

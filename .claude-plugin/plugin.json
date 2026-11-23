@@ -1,0 +1,22 @@
+{
+  "name": "arxiv-export",
+  "version": "1.0.0",
+  "description": "Export a Markdown academic paper into an arXiv-ready, recompilable LaTeX submission package (with a local PDF proof) — handles bare-unicode math, unicode→LaTeX conversion, theorem environments, references, compile verification, and arXiv packaging.",
+  "author": {
+    "name": "easyfan"
+  },
+  "homepage": "https://github.com/easyfan/arxiv-export",
+  "repository": "https://github.com/easyfan/arxiv-export",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "arxiv",
+    "latex",
+    "academic",
+    "paper",
+    "markdown",
+    "unicode",
+    "bibtex",
+    "skill"
+  ]
+}

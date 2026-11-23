@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "arxiv-export",
+  "description": "Export a Markdown academic paper into an arXiv-ready LaTeX submission package",
+  "owner": {
+    "name": "easyfan",
+    "email": "zhengfan@apache.org"
+  },
+  "plugins": [
+    {
+      "name": "arxiv-export",
+      "description": "Turns a Markdown academic paper (e.g. from academic-paper / writing-editorial) into an arXiv-recompilable LaTeX source package plus a local PDF proof. Treats the common 'bare-unicode math with no $ delimiters' case as a first-class scenario: per-block agents delimit math and convert unicode→LaTeX with a mandatory spot-check loop, then structure into amsthm theorem environments, build the bibliography, verify the compile (tectonic/XeLaTeX or pdfLaTeX), and package for arXiv.",
+      "category": "writing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/easyfan/arxiv-export.git",
+        "sha": "0000000000000000000000000000000000000000"
+      },
+      "homepage": "https://github.com/easyfan/arxiv-export"
+    }
+  ]
+}

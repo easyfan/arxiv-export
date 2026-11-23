@@ -1,0 +1,34 @@
+{
+  "name": "arxiv-export",
+  "version": "1.0.0",
+  "description": "Export a Markdown academic paper into an arXiv-ready, recompilable LaTeX submission package with a local PDF proof",
+  "keywords": [
+    "claude-code",
+    "arxiv",
+    "latex",
+    "academic",
+    "paper",
+    "markdown",
+    "unicode",
+    "bibtex",
+    "skill"
+  ],
+  "author": {
+    "name": "easyfan"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easyfan/arxiv-export.git"
+  },
+  "homepage": "https://github.com/easyfan/arxiv-export#readme",
+  "bugs": {
+    "url": "https://github.com/easyfan/arxiv-export/issues"
+  },
+  "files": [
+    ".claude-plugin/",
+    "skills/",
+    "install.sh",
+    "install.ps1"
+  ]
+}
